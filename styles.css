@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    /* grid-template-columns: 1fr; */ 
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav"
+    "hero hero"
+    "main main . sidebar"
+    "footer-img f-two"
+    row-gap 30px;
+}
+
+.flexbox{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.container {
+    flex-flow: row;
+}
